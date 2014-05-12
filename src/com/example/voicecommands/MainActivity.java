@@ -10,8 +10,6 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.voicecommands.service.Service;
-
 public class MainActivity extends ActionBarActivity {
 
 	@Override
@@ -24,7 +22,7 @@ public class MainActivity extends ActionBarActivity {
 					.add(R.id.container, new PlaceholderFragment()).commit();
 		}
 		Intent i = new Intent(this, Service.class);
-		startService(i);
+		
 	}
 
 	@Override
